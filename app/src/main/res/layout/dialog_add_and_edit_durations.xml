@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dark_theme"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtDialogAddAndEditDurationsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Add durations"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Number of training intervals:"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDialogAddAndEditNumberOfTrainingIntervals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Number of training intervals" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:text="duration of each training interval:"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtDialogAddAndEditDurationsTraining"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="set Training duration" />
+
+
+    <TextView
+        android:text="Duration of each break interval:"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/txtDialogAddAndEditDurationsBreak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Break duration" />
+
+    <LinearLayout
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnDialogAddAndEditDurationsCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/background_primary_color"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDialogAddAndEditDurationsSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background_primary_color"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
